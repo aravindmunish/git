@@ -1,0 +1,379 @@
+s<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Javascipt Tutorial</title>
+
+	<style type="text/css">
+			pre {font-family: Consolas,Menlo,"courier new",monospace;}
+			pre span {background-color: rgba(222,222,222,0.3);color: crimson;padding-left: 4px; padding-right: 4px}
+	</style>
+</head>
+
+<body>
+
+	<h3>Javascript Tutorial</h3>
+
+	<pre>
+
+	01) <span>HTML</span> to define the content of web pages
+
+	02) <span>CSS</span> to specify the layout of web pages
+
+	03) <span>JavaScript</span> to program the behavior of web pages
+			JavaScript was invented by <span>Brendan Eich in 1995</span>, and became an ECMA standard in 1997
+			ECMA-262 is the official name of the standard. ECMAScript is the official name of the language 
+			JavaScript and Java are completely different languages, both in concept and design
+
+	04) Javascript is basically a scripting language used to make web page more interactive
+			JavaScript program is a list of programming statements.
+			JavaScript Can Change HTML Contents/ Attribute Values & CSS values
+			A JavaScript function is a block of JavaScript code, that can be executed when "called or invoked" for.
+			For example, a function can be called when an event occurs, like when the user clicks a button.
+
+	05) A computer program is a list of "instructions" to be "executed" by a computer, 
+			Javascript Programing take order - one by one or step by step or line by line or statement by statement in the same order as they are written. 
+			In a programming language, these programming instructions are called statements. 
+			Add a semicolon at the end of each executable statement (<span>;</span>), Semicolons separate JavaScript statements.
+			When separated by semicolons, multiple statements on one line are allowed,
+			Ending statements with semicolon is not required, but highly recommended
+			JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.
+			JavaScript statements are composed of : <span>Comments, Keywords, Operators, Expressions and Values</span>
+	
+	06) JavaScript Can Change HTML Contents - <span>getElementById() method</span> - "finds" an HTML element (with <span>id="demo"</span>), and changes the element content (<span>innerHTML</span>) to "Hello JavaScript"	
+
+	07) JavaScript Can Change HTML Attribute Values <span>onclick="document.getElementById('myImage').src='img2.jpg'"</span>
+
+	08) JavaScript Can Change HTML Styles (CSS) <span> onclick="document.getElementById("demo").style.display=''none'"</span>
+
+	09) JavaScript accepts both double and single quotes <span> onclick="document.getElementById('demo').innerHTML = 'Hello Vasanth'"</span>
+
+	10) Placing scripts at the bottom of the <span>body</span> element improves the display speed, because script interpretation slows down the display.
+
+			a) Scripts can also be placed in external files <span>app.js</span>
+			b) External scripts are practical when the same code is used in many different web pages.
+			c) JavaScript files have the file extension <span>.js</span>
+			d) To use an external script, put the name of the script file in the src (source) attribute of a <span>&lt;script&gt;</span> tag <span>&lt;script src="app.js"&gt;&lt;/script&gt;</span>	
+			e) You can place an external script reference in <span>&lt;head&gt; or &lt;body&gt;</span> as you like
+			f) The script will behave as if it was located exactly where the <span>&lt;script&gt;</span> tag is located
+			g) External scripts cannot contain <span>&lt;script&gt;</span> tags.
+
+			External JavaScript Advantages
+			------------------------------
+			a) It separates HTML and code
+			b) It makes HTML and JavaScript easier to read and maintain
+			c) Cached JavaScript files can speed up page loads
+
+			An external script can be referenced in 3 different ways
+			--------------------------------------------------------
+
+			a) With a full URL (a full web address) <span>&lt;script src="https://www.codegenius.in/js/app.js"&gt;&lt;/script&gt;</span>
+			b) With a file path (like /js/) <span>&lt;script src="/js/app.js"&gt;&lt;/script&gt;</span>
+			c) Without any path <span>&lt;script src="app.js"&gt;&lt;/script&gt;</span>
+
+	---------------------
+
+	11) JavaScript Output / Display Possibilities (display data in HTML)
+
+			a) Writing into the HTML output using <span>document.write()</span> - For testing purposes
+			b) Writing into an HTML element, using <span>innerHTML</span> - Modify in particular element		
+
+					To access an HTML element
+					------------------------
+					</span>document.getElementById("demo").innerHTML = 10 + 4;</span>
+					JavaScript can use the <span>getElementById - method</span>						
+					<span>Id attribute</span> defines the <span>HTML element</span>
+					<span>innerHTML property</span> defines the <span>HTML content</span>							
+
+			c) Writing into an alert box, using <span>window.alert()</span> - Alert box to display data (window keyword is optional)
+			d) Writing into the browser console, using <span>console.log()</span> - For debugging purposes
+			b) JavaScript Print <span>window.print()</span> This method Print the content of the current window
+
+	12) JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.		
+
+	Keyword				Description
+
+	var          Declares a variable
+	let          Declares a block variable
+	const        Declares a block constant
+	if           Marks a block of statements to be executed on a condition
+	switch       Marks a block of statements to be executed in different cases
+	for          Marks a block of statements to be executed in a loop
+	function     Declares a function
+	return       Exits a function
+	try          Implements error handling to a block of statements
+
+	13) JavaScript Syntax
+			JavaScript syntax is the set of rules, how JavaScript programs are constructed:
+
+			How to <span>create variables</span>:
+					var x;
+					let y;
+
+			How to <span>use variables</span>:
+					x = 5;
+					y = 6;
+					let z = x + y;
+
+	14) JavaScript Values:
+
+			a) <span>Fixed</span> values are called <span>Literals</span>
+
+					The two most important syntax rules for fixed values are
+
+					1. <span>Numbers</span> are written with or without decimals: <span>100.54</span> & <span>1101</span>
+					2. <span>Strings</span> are text, written within double or single quotes: <span>"Vasanth"</span> & <span>'Vasanth'</span>
+
+			b) <span>Variable</span> values are called <span>Variables</span>
+
+	15)  JavaScript variables are containers for storing data values
+			 
+			 a) Variable is a placeholder
+			 b) JavaScript uses the keywords <span>var</span>, <span>let</span> and <span>const</span> to declare variables
+			 c) <span>Is Case Sensitive - x (small) and X (Caps) both are different</span>
+			 d) It's a good programming practice to declare all variables at the beginning of a script
+			 e) You can declare many variables in one statement (Using comma symbol)
+			 		<span>var person = "John Doe", carName = "Volvo", price = 200;</span>
+			 		<span>Syntax : Keywords - Assignment operator - value - semicolan</span>
+			 f) A variable declared without a value will have the value <span>undefined</span>
+			 g) strings will be concatenated - <span>var x = "vasanth" + " " + "kumar";</span>
+			 h) If you put a number in quotes, the rest of the numbers will be treated as <span>strings</span>, and concatenated
+
+			 			eg: var x = "5" + 2 + 3; // output : 523 // If you add a number and a string, the result will be a <span>string!</span>
+			 					var x = 2 + 3 + "5"; // output : 55
+
+			 i) The <span>var</span> keyword - <span>be Redeclared - Global Scope</span>
+
+			 		var x = "Vasanth Kumar";
+					var x = 0;
+
+			 j) The <span>let</span> keyword was introduced in ES6 (2015) - <span>Cannot be Redeclared - Block Scope</span>
+
+					Variables defined with <span>let</span> cannot be Redeclared.
+					Variables defined with <span>let</span> must be Declared before use.
+					Variables defined with <span>let</span> have Block Scope. 
+					Variables declared inside a <span>{ } block</span> cannot be accessed from outside the block.
+
+						let x = "Vasanth Kumar";
+						let x = 0; 	// SyntaxError: 'x' has already been declared 
+
+			k) The <span>const</span> keyword was introduced in ES6 (2015) - <span>Cannot be Redeclared - Block Scope</span>
+
+					Variables defined with <span>const</span> cannot be Redeclared.
+					Variables defined with <span>const</span> cannot be Reassigned.
+					Variables defined with <span>const</span> have Block Scope
+
+						const PI = 3.141592653589793;
+
+	16) JavaScript Operators
+
+			a) Arithmetic operators <span>( + - * / )</span> to compute values
+			b) Assignment operator <span>( = )</span> to assign values to variables
+			c) The "equal to" operator is written like <span>==</span> in JavaScript
+
+
+	17) JavaScript Expressions - An expression is a combination of <span>values, variables, and operators</span>, which computes to a value, The computation is called an <span>evaluation</span>.
+
+			The values can be of various types, such as numbers and strings <span>(Algebra)</span>
+
+			eg: 5 * 10, x * 10, "vasanth" + " " + "kumar"
+
+	18) JavaScript Keywords - <span>keywords</span> are used to identify actions to be performed.
+
+	19) JavaScript Comments
+
+			a) Code after double slashes <span>//</span> or between <span>/* and */</span> is treated as a comment
+			b) Comments are ignored, and will not be executed
+
+				// Single Line Comment
+
+				/* Multiline Comment
+				goes here
+				some cmments */
+
+	20) JavaScript Identifiers: <span>Identifiers</span> are <span>unique names</span> -  name (variables, keywords, functions and labels)
+			a) In JavaScript, the first character must be a letter (A-Z or a-z), or an underscore (_), or a dollar sign ($)
+			b) Subsequent characters may be letters, digits, underscores, or dollar signs
+			c) <span>Numbers are not allowed as the first character</span>
+			d) <span>Reserved words (like JavaScript keywords) cannot be used as names</span>
+			e) All JavaScript identifiers are <span>case sensitive</span> 
+			f) The variables <span>lastName</span> and <span>lastname</span>, are two different variables
+			g) Different ways of joining multiple words into one variable name:  
+					<span>Hyphens Not allowed in javascript (first-name)</span>, They are reserved for <span>subtractions</span>
+
+
+					Underscore : eg: first_name
+					Upper Camel Case (Pascal Case) - eg: FirstName
+					Lower Camel Case - eg: lastName
+			h) JavaScript uses the Unicode character set - characters, punctuations, and symbols etc
+
+	----------------------------------------------------------------------------------------------------------
+	Operator Precedence Values (Total - 36 Operator)
+	---------------------------------------------------------------------------------------------------------
+
+	21) JavaScript Arithmetic Operators (8) - Arithmetic operators are used to perform arithmetic on numbers
+
+			Operator	Description
+
+			+	        Addition
+			-	        Subtraction
+			*	        Multiplication
+			**	        Exponentiation (ES2016)
+			/	        Division
+			%	        Modulus (Division Remainder)
+			++	        Increment
+			--	        Decrement
+
+	22) JavaScript Assignment Operators (7) - Assignment operators assign values to JavaScript variables.
+
+			Operator    Example       Same As
+
+			=           x = y	  x = y
+			+=	    x += y	  x = x + y
+			-=	    x -= y	  x = x - y
+			*=	    x *= y	  x = x * y
+			/=	    x /= y	  x = x / y
+			%=	    x %= y	  x = x % y
+			**=	    x **= y	  x = x ** y
+
+	23) JavaScript Comparison Operators (9)
+
+			Operator      Description
+
+			==	      equal to
+			===	      equal value and equal type
+			!=	      not equal
+			!==	      not equal value or not equal type
+			>	      greater than
+			<	      less than
+			>=	      greater than or equal to
+			<=	      less than or equal to
+			?	      ternary operator
+
+	24) JavaScript Logical Operators (3)
+
+			Operator      Description
+
+			&&	      logical and
+			||	      logical or
+			!	      logical not
+
+	25) JavaScript Type Operators (2)
+
+			Operator        Description
+
+			typeof	        Returns the type of a variable
+			instanceof	Returns true if an object is an instance of an object type
+
+	25) JavaScript Bitwise Operators (7) 
+
+			1) Bit operators work on 32 bits numbers. 
+			2) Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number.
+
+			Operator      Description		
+
+			&                 AND
+			|	          OR
+			~	          NOT
+			^	          XOR
+			<<	          Zero fill left shift
+			>>	          Signed right shift
+			>>>	          Zero fill right shift
+
+	26) JavaScript Data Types (8)
+
+			Primitive data types : Strings, Numbers, Booleans, Undefined, Null, Symbol and BigInt (Not support in IE) (https://javascript.info/types)
+
+			Composite data types: Object, Array, and Function
+
+			typeof "foo"         // "string"
+			typeof 0             // "number"
+			typeof true          // "boolean"
+			typeof undefined     // "undefined"
+			typeof Symbol("id")  // "symbol"
+			typeof 10n           // "bigint"
+
+			typeof Math          // "object"
+			typeof null          // "object"
+			typeof alert         // "function"
+
+			<span>Programs with syntax</span>		
+
+			01 - Introduction to JavaScript
+			02 - Comments and Statements
+			03 - Variables
+			04 - Different Types of Variables
+			05 - Using Variables with Strings
+			06 - Functions
+			07 - Using Parameters with Functions
+			08 - Functions with Multiple Parameters
+			09 - The return Statement
+			10 - Calling a Function From Another Function
+			11 - Global & Local Variables
+			12 - Math Operators
+			13 - Assignment Operators
+			14 - if Statement
+			15 - if_⁄else Statement
+			16 - Nesting if_⁄else
+			17 - Complex Conditions
+			18 - switch
+			19 - for Loop
+			20 - while Loop
+			21 - do while
+			22 - Event Handlers
+			23 - onMouseOver & onLoad
+			24 - Objects
+			25 - Creating Our Own Objects
+			26 - Object Initializers
+			27 - Adding Methods to Our Objects
+			28 - Arrays
+			29 - Other Ways to Create Arrays
+			30 - Array Properties and Methods
+			31 - join and pop
+			32 - reverse, push, sort
+			33 - Add Array Elements Using a Loop
+			34 - Technique to Print Array Elements
+			35 - Associative Arrays
+			36 - Math Objects
+			37 - Date Objects
+			38 - Accessing Forms
+			39 - Accessing Form Elements
+			40 - Simple Form Validation
+
+
+	</pre>
+
+	<br>
+	
+	<script type="text/javascript">		
+
+	// 1. Introduction	
+
+		document.write("Hello World!" + '<br />');
+
+		/* Above code is a check for older browser <!-- JScode //--> */
+
+
+	// 2. Comment & Statement
+
+		// Single Line Comment
+
+		/* Multiline Comment
+		goes here */
+
+
+	// 3. Variables
+
+		// Declaration (Creating) : keyword - Assign - value - semicolan			
+
+		var x;  // After the declaration, the variable has no value (technically it has the value of undefined)
+		x = 10;
+		document.write(x);	
+
+
+	</script>
+		
+
+</body>
+
+</html>
